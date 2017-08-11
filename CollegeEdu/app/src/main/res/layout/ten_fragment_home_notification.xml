@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle_notification_bg"
+    tools:context="com.weds.tenedu.ui.fragment.HomeNotifiFragment">
+
+    <com.dalong.marqueeview.MarqueeView
+        android:id="@+id/mMarqueeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_10"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:direction="left"
+        app:isRepeat="false"
+        app:speed="400"
+        app:startPoint="end"
+        app:textSize="20sp"
+        app:textcolor="@color/color_33" />
+
+</RelativeLayout>

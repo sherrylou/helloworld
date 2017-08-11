@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.weds.collegeedu.ui.fragment.HomeAttendanceFragment">
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--/>-->
+
+    <TextView
+        android:id="@+id/tv_sub_amount"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/C1"
+        android:textSize="@dimen/home_attendance_title_size" />
+
+    <TextView
+        android:id="@+id/tv_sub_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:text=""
+        android:textColor="@color/C1"
+        android:textSize="28sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="教师 : "
+            android:textColor="@color/C1"
+            android:textSize="@dimen/home_attendance_normal_size" />
+
+        <TextView
+            android:id="@+id/tv_first_teach_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:text=""
+            android:textColor="@color/C1"
+            android:textSize="@dimen/home_attendance_sec_title_size" />
+
+        <TextView
+            android:id="@+id/tv_first_sec_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/C1"
+            android:textSize="@dimen/home_attendance_sec_title_size" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:id="@+id/ll_attendance_class_names"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--/>-->
+
+    <LinearLayout
+        android:id="@+id/ll_attendance_num"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1.8"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.5"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="应到 : "
+                android:textColor="@color/C1"
+                android:textSize="@dimen/home_attendance_normal_size" />
+
+            <TextView
+                android:id="@+id/tv_should_here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/C1"
+                android:textSize="@dimen/home_attendance_normal_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.5"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实到 : "
+                android:textColor="@color/C1"
+                android:textSize="@dimen/home_attendance_normal_size" />
+
+            <TextView
+                android:id="@+id/tv_current_here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/C1"
+                android:textSize="@dimen/home_attendance_normal_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.5"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未到 : "
+                android:textColor="@color/C1"
+                android:textSize="@dimen/home_attendance_normal_size" />
+
+            <TextView
+                android:id="@+id/tv_not_here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/C1"
+                android:textSize="@dimen/home_attendance_normal_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

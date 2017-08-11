@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="70dp"
+    android:paddingRight="70dp"
+    tools:context="com.weds.settings.ui.SettingAdvancedFragment">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_setting_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            />
+
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:id="@+id/sl_tir_contain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_tir_contain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            />
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        >
+
+        <TextView
+            android:id="@+id/tv_bottom"
+            android:layout_width="@dimen/setting_save_button_width"
+            android:layout_height="@dimen/setting_save_button_height"
+            android:text="保存"
+            android:textSize="@dimen/ll_size"
+            android:textColor="@color/W1"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/setting_save_button_bottom"
+            android:background="@drawable/setting_bottom_button_back"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="900dp"
+        android:layout_height="500dp"
+        android:background="@mipmap/prompt"
+        android:layout_centerInParent="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="100dp"
+            android:layout_centerInParent="true"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_tir_title_contain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="100dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_tir_title_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/B8"
+                    android:textSize="@dimen/ll_size"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/G3"
+                    android:layout_marginLeft="10dp"
+                    />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/slv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_radio_contain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    />
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/ll_root"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_marginBottom="30dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:paddingStart="50dp"-->
+            <!--android:paddingEnd="50dp"-->
+            <!--&gt;-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ll_tir_title_contain"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_marginTop="100dp"-->
+                <!--&gt;-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_tir_title_name"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text=""-->
+                    <!--android:textColor="@color/B8"-->
+                    <!--android:textSize="@dimen/ll_size"-->
+                    <!--/>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="@color/G3"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--/>-->
+
+            <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[ESC]取消,[ENT]保存"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+
+            />
+
+    </RelativeLayout>
+
+    <com.weds.settings.view.NumBerKeyBoardView
+        android:id="@+id/number_key"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/rl_root"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

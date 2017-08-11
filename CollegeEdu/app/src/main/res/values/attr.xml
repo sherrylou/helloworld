@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularProgressView">
+        <attr name="radius" format="dimension"/>
+        <attr name="strokeWidth" format="dimension"/>
+        <attr name="circleColor" format="color"/>
+        <attr name="ringColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="SwitchView">
+        <attr name="hasShadow" format="boolean"/>
+        <attr name="primaryColor" format="color"/>
+        <attr name="primaryColorDark" format="color"/>
+        <attr name="isOpened" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="VerticalMarqueeTextView">
+        <attr name="VerticalMarqueeTextView_textColor" format="color" />
+        <attr name="VerticalMarqueeTextView_textSize" format="dimension" />
+        <attr name="VerticalMarqueeTextView_isRepeat" format="boolean" />
+        <attr name="VerticalMarqueeTextView_startPoint" format="integer" >
+            <enum name="start" value="0" />
+            <enum name="end" value="1" />
+        </attr>
+        <attr name="VerticalMarqueeTextView_direction" format="integer" >
+            <enum name="up" value="0" />
+            <enum name="down" value="1" />
+        </attr>
+        <attr name="VerticalMarqueeTextView_speed" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="NumBerKeyBoardView">
+        <attr name="inputType" format="integer">
+            <enum name="psw" value="0" />
+            <enum name="normal" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

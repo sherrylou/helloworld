@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_advanced_title_name"
+        android:layout_width="@dimen/setting_advanced_title_button_width"
+        android:layout_height="@dimen/setting_advanced_title_button_height"
+        android:text=""
+        android:textSize="@dimen/l_size"
+        android:textColor="@color/B8"
+        android:gravity="center"
+        />
+
+</LinearLayout>

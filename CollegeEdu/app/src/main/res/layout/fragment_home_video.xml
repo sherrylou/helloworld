@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.weds.collegeedu.ui.fragment.HomeVideoFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/C1"
+        >
+
+        <VideoView
+            android:id="@+id/vv_home_frag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_video_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/video_error"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

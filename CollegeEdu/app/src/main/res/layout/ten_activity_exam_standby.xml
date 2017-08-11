@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/base_back_blue"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_15"
+    android:paddingLeft="@dimen/margin_15"
+    android:paddingRight="@dimen/margin_15"
+    tools:context="com.weds.tenedu.ui.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/fragement_header_title"
+            android:name="com.weds.tenedu.ui.fragment.HomeTitleFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.9" />
+
+        <fragment
+            android:id="@+id/fragement_search"
+            android:name="com.weds.tenedu.ui.fragment.HomeDayInfoFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragement_examstandby_title"
+        android:name="com.weds.tenedu.ui.fragment.ExamStandbyFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>

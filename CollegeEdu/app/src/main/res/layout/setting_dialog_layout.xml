@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/B3"
+    >
+
+    <RelativeLayout
+        android:layout_width="@dimen/setting_dialog_width"
+        android:layout_height="@dimen/setting_dialog_height">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/setting_margin"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/W1"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="设备ID: "
+                        android:textSize="12sp"
+                        android:textColor="@color/B3"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_device_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6688668866"
+                        android:textSize="12sp"
+                        android:textColor="@color/B3"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请输入密码"
+                    android:textColor="@color/B3"
+                    android:textSize="8sp"
+                    android:layout_gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/et_psw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberPassword"
+                    android:textSize="12sp"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/setting_margin"
+                    android:hint="xxxxx"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="密码正确"
+                    android:textColor="@color/B3"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:visibility="invisible"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="28dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_enter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="确定"
+                        android:textColor="@color/B3"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="取消"
+                        android:textColor="@color/B3"
+                        android:textSize="12sp"
+                        android:layout_marginRight="25dp"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_device_state"
+                android:layout_width="80dp"
+                android:layout_height="42dp"
+                android:text="主机"
+                android:textSize="12sp"
+                android:textColor="@color/B3"
+                android:background="@color/G1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

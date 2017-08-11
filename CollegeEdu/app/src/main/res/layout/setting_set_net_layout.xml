@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_set_net_name"
+        android:layout_width="@dimen/setting_tv_input_name_width"
+        android:layout_height="wrap_content"
+        android:gravity="center|start"
+        android:text=""
+        android:textColor="@color/C1"
+        android:textSize="@dimen/ll_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" : "
+        android:textColor="@color/C1"
+        android:textSize="@dimen/ll_size" />
+
+    <EditText
+        android:id="@+id/et_net_1"
+        android:layout_width="@dimen/setting_net_input_width"
+        android:layout_height="@dimen/setting_input_ed_height"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/setting_input_edit_back"
+        android:gravity="center"
+        android:hint=""
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="@color/C1"
+        android:textColorHint="@color/G3"
+        android:textSize="@dimen/l_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:textColor="@color/C1"
+        android:textSize="@dimen/ll_size" />
+
+    <EditText
+        android:id="@+id/et_net_2"
+        android:layout_width="@dimen/setting_net_input_width"
+        android:layout_height="@dimen/setting_input_ed_height"
+        android:background="@drawable/setting_input_edit_back"
+        android:gravity="center"
+        android:hint=""
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="@color/C1"
+        android:textColorHint="@color/G3"
+        android:textSize="@dimen/l_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:textColor="@color/C1"
+        android:textSize="@dimen/ll_size" />
+
+    <EditText
+        android:id="@+id/et_net_3"
+        android:layout_width="@dimen/setting_net_input_width"
+        android:layout_height="@dimen/setting_input_ed_height"
+        android:background="@drawable/setting_input_edit_back"
+        android:gravity="center"
+        android:hint=""
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="@color/C1"
+        android:textColorHint="@color/G3"
+        android:textSize="@dimen/l_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:textColor="@color/C1"
+        android:textSize="@dimen/ll_size" />
+
+    <EditText
+        android:id="@+id/et_net_4"
+        android:layout_width="@dimen/setting_net_input_width"
+        android:layout_height="@dimen/setting_input_ed_height"
+        android:background="@drawable/setting_input_edit_back"
+        android:gravity="center"
+        android:hint=""
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="@color/C1"
+        android:textColorHint="@color/G3"
+        android:textSize="@dimen/l_size" />
+
+</LinearLayout>

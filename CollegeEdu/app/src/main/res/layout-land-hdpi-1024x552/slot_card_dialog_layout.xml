@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/slot_10_root_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/hint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统提示"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/size_20" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_person_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_head_img"
+                android:layout_width="131dp"
+                android:layout_height="164dp"
+                android:layout_marginRight="40dp"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/iv_camera"
+                android:layout_width="241dp"
+                android:layout_height="164dp"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="40dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/size_16"
+                    android:layout_marginRight="@dimen/margin_10"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/size_16"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_no_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="工号"
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/size_16"
+                    android:layout_marginRight="@dimen/margin_10"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/C1"
+                    android:textSize="@dimen/size_16"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_error_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="错误，没有该人员档案信息，请重新刷卡"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/size_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/tv_enter"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/slot_10_botton_bg"
+                android:gravity="center"
+                android:text="确认"
+                android:textColor="@color/W1"
+                android:textSize="@dimen/size_20" />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="@drawable/slot_10_botton_bg"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/W1"
+                android:textSize="@dimen/size_20" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_real_time_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="系统正在查询您的信息，请稍后"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/size_20" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_real_time_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="未能查询到您的上课信息，请稍后重试"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/size_20" />
+
+    </LinearLayout>
+
+</LinearLayout>

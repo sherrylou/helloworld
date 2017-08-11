@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="请输入原密码 : "
+            android:gravity="center"
+            android:textSize="@dimen/ll_size"
+            android:textColor="@color/G1"
+            />
+
+        <EditText
+            android:id="@+id/et_old_psw"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/ll_size"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="请输入新密码 : "
+            android:gravity="center"
+            android:textSize="@dimen/ll_size"
+            android:textColor="@color/G1"
+            />
+
+        <EditText
+            android:id="@+id/et_new_psw"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/ll_size"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="请输入密码 : "
+            android:gravity="center"
+            android:textSize="@dimen/ll_size"
+            android:textColor="@color/G1"
+            />
+
+        <EditText
+            android:id="@+id/et_verify_psw"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/C1"
+            android:textSize="@dimen/ll_size"
+            android:gravity="center"
+            android:hint="请输入密码"
+            android:layout_gravity="center_vertical"
+            android:inputType="textPassword"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/notice_back"
+    tools:context="com.weds.collegeedu.ui.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="通知通告"
+            android:gravity="center"
+            android:textColor="@color/W1"
+            android:textSize="@dimen/home_notice_title_size"
+            android:layout_marginTop="17dp"
+            />
+
+        <ScrollView
+            android:id="@+id/slv_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:scrollbars="none"
+            >
+
+            <TextView
+                android:id="@+id/tv_notify"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:gravity="left"
+                android:textColor="@color/C1"
+                android:textSize="@dimen/home_notice_normal_size"
+                android:layout_marginTop="0dp"
+                android:lineSpacingExtra = "10dp"
+                />
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.09"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="48dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_notify_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="2dp"
+                android:text=""
+                android:textColor="@color/C1"
+                android:textSize="@dimen/home_notice_normal_size" />
+
+            <TextView
+                android:id="@+id/tv_notify_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_notify_date"
+                android:layout_marginBottom="6dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textColor="@color/C1"
+                android:textSize="@dimen/home_notice_normal_size" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

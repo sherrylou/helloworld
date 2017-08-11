@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting_wifi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/setting_back"
+    tools:context="com.weds.setting.ui.SettingNetActivity">
+
+    <include
+        layout="@layout/title_layout"
+        />
+
+    <FrameLayout
+        android:id="@+id/fl_net_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/W1"
+        android:layout_marginLeft="@dimen/title_left"
+        android:layout_marginRight="@dimen/title_right"
+        android:layout_marginStart="@dimen/title_left"
+        android:layout_marginEnd="@dimen/title_right"
+        android:layout_marginBottom="@dimen/index_bottom"
+        />
+
+</LinearLayout>

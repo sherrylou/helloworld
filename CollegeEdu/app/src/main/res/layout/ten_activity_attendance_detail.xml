@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_notification_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/base_back_blue"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/ten_title_layout"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/due_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/due_text_tv"
+                    android:layout_width="50dp"
+                    android:layout_height="80dp"
+                    android:background="#3A90FF"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_8"
+                    android:text="@string/due_string"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/due_number_tv"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text=""
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/actually_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_15"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/actually_text_tv"
+                    android:layout_width="50dp"
+                    android:layout_height="80dp"
+                    android:background="#4FCCEA"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_8"
+                    android:text="@string/actually_string"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/actually_number_tv"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text=""
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/non_arrival_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/non_arrival_text_tv"
+                    android:layout_width="50dp"
+                    android:layout_height="80dp"
+                    android:background="#EA4F60"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_8"
+                    android:text="@string/non_arrival_string"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/non_arrival_number_tv"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text=""
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/color_red_ff3300"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_70"
+            android:layout_marginLeft="@dimen/dimen_40"
+            android:layout_marginTop="@dimen/dimen_70"
+            android:background="#9FD1DC" />
+
+        <View
+            android:layout_width="@dimen/dimen_1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dimen_70"
+            android:layout_marginRight="@dimen/dimen_40"
+            android:layout_marginTop="@dimen/dimen_70"
+            android:background="#DCF0E5" />
+
+        <LinearLayout
+            android:id="@+id/list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="75dp"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/attendance_rv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:layout_centerInParent="true"
+                android:fillViewport="true"
+                android:scrollbars="none" />
+
+
+            <TextView
+                android:id="@+id/introduce_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_below="@id/attendance_rv"
+                android:layout_marginTop="@dimen/margin_15"
+                android:textColor="@color/W1"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/student_info_layout"
+            layout="@layout/ten_attendance_student_info_layout"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</LinearLayout>

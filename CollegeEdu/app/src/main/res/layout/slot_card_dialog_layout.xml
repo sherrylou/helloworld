@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@mipmap/dialog_student_back"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="100dp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:background="@drawable/green_frame"
+                android:layout_marginRight="100dp"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_local_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/mini_avatar"
+                    android:scaleType="fitXY"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.1"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:background="@drawable/green_frame"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_camera_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/mini_avatar"
+                    android:scaleType="fitXY"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:gravity="center_vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名"
+                    android:textSize="@dimen/x_size"
+                    android:textColor="@color/GW1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textSize="@dimen/x_size"
+                    android:textColor="@color/GW1"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/x_size"
+                    android:textColor="@color/GW1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学号"
+                    android:textSize="@dimen/x_size"
+                    android:textColor="@color/GW1"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textSize="@dimen/x_size"
+                    android:textColor="@color/GW1"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/x_size"
+                    android:textColor="@color/GW1"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_null_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/failure_back"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="请重新刷卡"
+            android:textSize="60sp"
+            android:textColor="@color/R4"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="教室好像不对哟~"
+            android:textSize="@dimen/title_size"
+            android:textColor="@color/Y5"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_wrong_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/failure_back"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_wrong_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="尊敬的"
+                android:textSize="@dimen/x_size"
+                android:textColor="@color/Y5"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_wrong_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/x_size"
+                android:textColor="@color/Y5"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_null"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="本教室没有您的安排"
+            android:textSize="@dimen/x_size"
+            android:textColor="@color/Y5"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_class_info"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您"
+                android:textSize="@dimen/x_size"
+                android:textColor="@color/Y5"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_thisOrNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下节课"
+                android:textSize="@dimen/x_size"
+                android:textColor="@color/Y5"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在"
+                android:textSize="@dimen/x_size"
+                android:textColor="@color/Y5"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_class_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    "
+                android:textSize="@dimen/x_size"
+                android:textColor="@color/Y5"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="教室"
+                android:textSize="@dimen/x_size"
+                android:textColor="@color/Y5"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_return_null"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="对不起，未查询到您的信息"
+            android:textSize="@dimen/l_size"
+            android:textColor="@color/Y5"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv_return_state"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="正在返回数据,请稍后~"
+            android:textSize="@dimen/l_size"
+            android:textColor="@color/B1"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <!--侧边栏-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/B8"
+        >
+
+        <!--顶部栏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/setting_left_top"
+            android:layout_marginLeft="@dimen/setting_left_hor"
+            android:layout_marginRight="@dimen/setting_left_hor"
+            android:background="@drawable/setting_left_top_frame"
+            android:padding="2dp"
+            >
+
+            <!--向导-->
+            <LinearLayout
+                android:id="@+id/ll_guide_setting"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/setting_left_top_button_sel_frame"
+                >
+                
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/wifi_black"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="向导设置"
+                    android:textColor="@color/W1"
+                    android:textSize="@dimen/min_size"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <!--高级-->
+            <LinearLayout
+                android:id="@+id/ll_advanced_setting"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/albumss_black"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="高级设置"
+                    android:textColor="@color/W1"
+                    android:textSize="@dimen/min_size"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:layout_marginTop="@dimen/setting_left_ll_vic"
+            android:layout_marginBottom="@dimen/setting_left_ll_vic"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_setting_left_down"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_right_setting_contain"
+        android:layout_width="0dp"
+        android:layout_weight="8"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

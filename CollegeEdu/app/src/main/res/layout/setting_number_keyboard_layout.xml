@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_show_number"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text=""
+        android:textColor="@color/C1"
+        android:textSize="24sp"
+        android:gravity="start|center_vertical"
+        android:paddingStart="20dp"
+        android:background="@color/W1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/number_1"
+            style="@style/number_keyboard"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/number_2"
+            style="@style/number_keyboard"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/number_3"
+            style="@style/number_keyboard"
+            android:text="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/number_4"
+            style="@style/number_keyboard"
+            android:text="4" />
+
+        <TextView
+            android:id="@+id/number_5"
+            style="@style/number_keyboard"
+            android:text="5" />
+
+        <TextView
+            android:id="@+id/number_6"
+            style="@style/number_keyboard"
+            android:text="6" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/number_7"
+            style="@style/number_keyboard"
+            android:text="7" />
+
+        <TextView
+            android:id="@+id/number_8"
+            style="@style/number_keyboard"
+            android:text="8" />
+
+        <TextView
+            android:id="@+id/number_9"
+            style="@style/number_keyboard"
+            android:text="9" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/symbol_heng"
+            style="@style/number_keyboard"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/symbol_dian"
+            style="@style/number_keyboard"
+            android:text="." />
+
+        <TextView
+            android:id="@+id/symbol_empty"
+            style="@style/number_keyboard"
+            android:text=":" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/number_clear_last"
+            style="@style/number_keyboard"
+            android:text="back"
+            />
+
+        <TextView
+            android:id="@+id/number_0"
+            style="@style/number_keyboard"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/number_enter"
+            style="@style/number_keyboard_enter"
+            android:text="输入"
+            android:textColor="@color/C1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <TextView
+        android:id="@+id/tv_input_name"
+        android:layout_width="@dimen/setting_tv_input_name_width"
+        android:layout_height="@dimen/setting_input_ed_height"
+        android:gravity="center|start"
+        android:textSize="@dimen/l_size"
+        android:textColor="@color/C1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/l_size"
+        android:textColor="@color/C1"
+        android:text=" : "
+        />
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="@dimen/setting_input_ed_width"
+        android:layout_height="@dimen/setting_input_ed_height"
+        android:textSize="@dimen/l_size"
+        android:textColor="@color/C1"
+        android:background="@drawable/setting_input_edit_back"
+        android:inputType="date"
+        android:gravity="center"
+        android:hint=""
+        android:textColorHint="@color/G3"
+        android:layout_marginLeft="15dp"
+        />
+
+</LinearLayout>

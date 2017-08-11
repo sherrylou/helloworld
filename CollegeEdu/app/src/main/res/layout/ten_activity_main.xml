@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/base_back_blue"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_15"
+    android:paddingLeft="@dimen/margin_15"
+    android:paddingRight="@dimen/margin_15"
+    tools:context="com.weds.tenedu.ui.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/fragement_header_title"
+            android:name="com.weds.tenedu.ui.fragment.HomeTitleFragment"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.3" />
+
+        <fragment
+            android:id="@+id/fragement_search"
+            android:name="com.weds.tenedu.ui.fragment.HomeDayInfoFragment"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <fragment
+            android:id="@+id/fragment_course_timetable"
+            android:name="com.weds.tenedu.ui.fragment.HomeTableFragment"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/fragment_attendance"
+            android:name="com.weds.tenedu.ui.fragment.HomeAttendanceFragment"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_weight="1" />
+
+        <fragment
+            android:id="@+id/fragment_album"
+            android:name="com.weds.tenedu.ui.fragment.HomeCarouselImgFragment"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.8" />
+
+        <fragment
+            android:id="@+id/fragment_video"
+            android:name="com.weds.collegeedu.ui.fragment.HomeVideoFragment"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.8" />
+
+        <ImageView
+            android:id="@+id/iv_default_img"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.8"
+            android:src="@mipmap/standby"
+            android:scaleType="fitXY"
+            />
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragement_notification"
+        android:name="com.weds.tenedu.ui.fragment.HomeNotifiFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_weight="1" />
+</LinearLayout>

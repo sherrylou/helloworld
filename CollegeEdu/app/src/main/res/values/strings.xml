@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">高教</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="course_name_string">课程名称</string>
+    <string name="instructor_string">授课教师</string>
+    <string name="current_class_string">当前课节</string>
+    <string name="due_string">应\r\n到</string>
+    <string name="non_arrival_string">未\r\n到</string>
+    <string name="actually_string">实\r\n到</string>
+</resources>

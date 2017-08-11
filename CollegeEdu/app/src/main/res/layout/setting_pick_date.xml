@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_set_data"
+        android:layout_width="@dimen/setting_tv_date_name_width"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/ll_size"
+        android:textColor="@color/C1"
+        android:layout_marginRight="80dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_set_date"
+        android:layout_width="@dimen/setting_motion_button_width"
+        android:layout_height="@dimen/setting_motion_button_height"
+        android:text="设置"
+        android:textSize="@dimen/l_size"
+        android:textColor="@color/W1"
+        android:background="@drawable/setting_set_button_back"
+        android:gravity="center"
+        />
+
+</LinearLayout>

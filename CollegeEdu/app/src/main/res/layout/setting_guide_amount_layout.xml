@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_guide_start_line"
+            android:layout_width="@dimen/setting_guide_amount_left_line_width"
+            android:layout_height="@dimen/setting_guide_amount_left_line_height"
+            android:background="@drawable/setting_guide_start_back"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_guide_start_iv_contain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ll_guide_start_line"
+            android:layout_toEndOf="@+id/ll_guide_start_line"
+            android:layout_centerVertical="true"
+            >
+
+            <ImageView
+                android:id="@+id/iv_start_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/guide_light"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/tv_guide_start_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="1"
+                android:textColor="@color/B8"
+                android:textSize="@dimen/setting_left_item_size" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/setting_guide_center_width"
+            android:layout_height="@dimen/setting_guide_amount_left_line_height"
+            android:background="@color/B8"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/rl_guide_start_iv_contain"
+            android:layout_toEndOf="@+id/rl_guide_start_iv_contain"
+            />
+
+        <TextView
+            android:id="@+id/tv_setting_guide_start_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/B8"
+            android:textSize="@dimen/setting_left_item_size"
+            android:layout_below="@+id/rl_guide_start_iv_contain"
+            android:layout_alignStart="@+id/rl_guide_start_iv_contain"
+            android:layout_alignLeft="@+id/rl_guide_start_iv_contain"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_guide_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_end_left_line"
+            android:layout_width="@dimen/setting_guide_center_width"
+            android:layout_height="@dimen/setting_guide_amount_left_line_height"
+            android:background="@color/G3"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_guide_end_iv_contain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ll_end_left_line"
+            android:layout_toEndOf="@+id/ll_end_left_line"
+            android:layout_centerVertical="true"
+            >
+
+            <ImageView
+                android:id="@+id/iv_end_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/guide_black" />
+
+            <TextView
+                android:id="@+id/tv_guide_end_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="@color/G3"
+                android:textSize="@dimen/ll_size" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_end_right_line"
+            android:layout_width="@dimen/setting_guide_amount_left_line_width"
+            android:layout_height="@dimen/setting_guide_amount_left_line_height"
+            android:orientation="vertical"
+            android:background="@drawable/setting_guide_end_black_back"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/rl_guide_end_iv_contain"
+            android:layout_toEndOf="@+id/rl_guide_end_iv_contain"
+            />
+
+        <TextView
+            android:id="@+id/tv_setting_guide_end_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/G3"
+            android:textSize="@dimen/setting_left_item_size"
+            android:layout_below="@+id/rl_guide_end_iv_contain"
+            android:layout_alignStart="@+id/rl_guide_end_iv_contain"
+            android:layout_alignLeft="@+id/rl_guide_end_iv_contain"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
